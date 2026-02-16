@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #003459;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+ul {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 12px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}

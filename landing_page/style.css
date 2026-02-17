@@ -7,7 +7,8 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.header, .content, .boxes, .quote, .action {
+.header, .content, .boxes, .quote-container, .action-container, .footer {
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +19,6 @@ body {
 .header {
     background-color: #003459;
     color: #ffffff;
-    display: flex;
     justify-content: space-between;
     padding: 12px 64px;
 }
@@ -54,6 +54,42 @@ body {
     margin-bottom: 4px;
 }
 
+.quote-container {
+    background-color: #d0d0d0;
+}
+
+.quote {
+    color: #00171f;
+    font-size: 16px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
+}
+
+.action {
+    background-color: #00a8e8;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 16px 64px;
+    border-radius: 4px;
+}
+
+.left-action {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer {
+    background-color: #003459;
+    color: #ffffff;
+    padding: 12px 64px;
+}
+
 ul {
     font-size: 14px;
     text-align: center;
@@ -75,4 +111,13 @@ button {
     font-weight: bold;
     padding: 4px 16px;
     border-radius: 4px;
+}
+
+strong {
+    font-size: 14px;
+}
+
+.second {
+    border: solid #ffffff;
+    border-width: 1px;
 }
